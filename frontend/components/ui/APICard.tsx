@@ -6,7 +6,7 @@ import { useSettings } from "@/context/SettingsProvider";
 
 interface APICardProps {
     api: {
-        id: number;
+        id: string;
         name: string;
         method: string;
         status: 'healthy' | 'slow' | 'down';
