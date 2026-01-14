@@ -1,4 +1,4 @@
-import { SettingsModel } from "../models/settings.models.ts";
+import { SettingsModel } from "../models/settings.models.js";
 
 async function getSingleton() {
   let doc = await SettingsModel.findOne();

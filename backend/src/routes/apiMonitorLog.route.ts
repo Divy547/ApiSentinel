@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getMonitorLogs } from "../controllers/apiMonitorLog.controller.ts";
+import { getMonitorLogs } from "../controllers/apiMonitorLog.controller.js";
 
 const router = Router();
 

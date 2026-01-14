@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { ApiConfigModel } from '../models/apiConfig.models.ts';
+import { ApiConfigModel } from '../models/apiConfig.models.js';
 
 export async function createApiConfig(req: Request, res: Response) {
   const config = await ApiConfigModel.create(req.body);

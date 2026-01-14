@@ -80,36 +80,7 @@ export default function LandingPage() {
 
 
 
-        {/* Floating UI Cards (Decorative) */}
-
-        {/* <div className="absolute top-20 left-14 hidden lg:block w-72 p-4 glass bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-gray-200">
-          <div className="h-2 w-20 bg-indigo-300 rounded mb-3" />
-          <div className="h-2 w-full bg-gray-200 rounded mb-2" />
-          <div className="h-2 w-3/4 bg-gray-200 rounded" />
-        </div>
-
-        <div className="absolute bottom-24 right-16 hidden lg:block w-80 p-5 glass bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-gray-200">
-          <div className="h-24 bg-indigo-100 rounded-lg mb-3" />
-          <div className="h-2 w-24 bg-purple-300 rounded" />
-        </div>
-
-
-        <div className="absolute top-[45%] left-24 hidden xl:block w-64 p-4 glass bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-gray-200">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-3 h-3 bg-green-500 rounded-full" />
-            <div className="h-2 w-24 bg-gray-300 rounded" />
-          </div>
-          <div className="h-2 w-full bg-gray-200 rounded mb-2" />
-          <div className="h-2 w-3/4 bg-gray-200 rounded" />
-        </div>
-
-        <div className="absolute bottom-28 left-[20%] hidden xl:block w-72 p-4 glass bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-gray-200">
-          <div className="space-y-2">
-            <div className="h-2 w-full bg-gray-200 rounded" />
-            <div className="h-2 w-5/6 bg-gray-200 rounded" />
-            <div className="h-2 w-2/3 bg-gray-200 rounded" />
-          </div>
-        </div> */}
+        
 
         {/* Hero Content */}
         <div className="relative max-w-4xl mx-auto text-center">

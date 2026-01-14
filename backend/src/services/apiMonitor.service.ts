@@ -1,7 +1,7 @@
 import * as cron from "node-cron";
-import { ApiConfigModel } from "../models/apiConfig.models.ts";
-import { ApiMonitorLogModel } from "../models/apiMonitorLog.model.ts";
-import { executeApiTest } from "./apiExecuter.ts";
+import { ApiConfigModel } from "../models/apiConfig.models.js";
+import { ApiMonitorLogModel } from "../models/apiMonitorLog.model.js";
+import { executeApiTest } from "./apiExecuter.js";
 
 let task: cron.ScheduledTask | null = null;
 let isRunning = false;
@@ -27,7 +27,7 @@ export function startApiMonitoringService() {
       const apiConfigs = await ApiConfigModel.find();
       console.log("📦 API configs found:", apiConfigs.length);
 
-      const results = await Promise.allSettled(
+      const resuljs = await Promise.allSettled(
         apiConfigs.map(async (config) => {
           try {
             const result = await executeApiTest({
@@ -73,7 +73,7 @@ export function startApiMonitoringService() {
         })
       );
 
-      const rejected = results.filter((r) => r.status === "rejected").length;
+      const rejected = resuljs.filter((r) => r.status === "rejected").length;
       if (rejected > 0) console.warn(`⚠️ ${rejected} monitoring tasks rejected`);
 
       console.log("✅ Monitoring cycle finished");

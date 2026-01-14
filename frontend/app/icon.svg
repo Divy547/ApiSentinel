@@ -1,0 +1,20 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Solid dark background -->
+  <rect width="48" height="48" rx="12" fill="#111827"/>
+
+  <!-- Shield outline -->
+  <path
+    d="M24 4L38 10V22C38 31 31.5 39 24 42C16.5 39 10 31 10 22V10L24 4Z"
+    stroke="#A5B4FC"
+    stroke-width="2"
+    fill="none"
+  />
+
+  <!-- Signal ring -->
+  <circle cx="24" cy="22" r="6" stroke="#A5B4FC" stroke-width="2" fill="none"/>
+
+  <!-- Status dot -->
+  <circle cx="24" cy="22" r="3" fill="#A5B4FC"/>
+
+</svg>

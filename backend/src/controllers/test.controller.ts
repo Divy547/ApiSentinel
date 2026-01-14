@@ -1,9 +1,9 @@
 import type { Request, Response } from "express";
-import { executeApiTest } from "../services/apiExecuter.ts";
-import type { ApiTest } from "../types/apiTest.ts";
-import { ALLOWED_METHODS } from "../types/apiTest.ts";
-import { isValidUrl } from "../utils/validator.ts";
-import { isSelfCall } from "../utils/urlGuards.ts";
+import { executeApiTest } from "../services/apiExecuter.js";
+import type { ApiTest } from "../types/apiTest.js";
+import { ALLOWED_METHODS } from "../types/apiTest.js";
+import { isValidUrl } from "../utils/validator.js";
+import { isSelfCall } from "../utils/urlGuards.js";
 
 export async function testApiController(req: Request, res: Response) {
     const body = req.body as ApiTest;
@@ -18,7 +18,7 @@ export async function testApiController(req: Request, res: Response) {
         return res.status(400).json({ success: false, error: `method must be one of ${ALLOWED_METHODS.join(", ")}` });
     }
     if (body.method !== 'GET' && body.body) {
-        delete body.body; // Remove body for non-GET requests
+        delete body.body; // Remove body for non-GET requesjs
     }
     if (!isValidUrl(body.url)) {
         return res.status(400).json({ success: false, error: "Invalid URL format" });

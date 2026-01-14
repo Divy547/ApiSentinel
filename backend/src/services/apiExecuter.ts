@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { AxiosRequestConfig } from 'axios';
-import type { ApiTest } from '../types/apiTest';
-import { sanitizeHeaders } from '../utils/sanitizeHeaders.ts';
+import type { ApiTest } from '../types/apiTest.js';
+import { sanitizeHeaders } from '../utils/sanitizeHeaders.js';
 
 
 type ApiErrorType =

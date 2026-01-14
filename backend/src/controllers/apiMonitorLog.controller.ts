@@ -1,4 +1,4 @@
-import { ApiMonitorLogModel } from "../models/apiMonitorLog.model.ts";
+import { ApiMonitorLogModel } from "../models/apiMonitorLog.model.js";
 
 export async function getMonitorLogs(req: any, res: any) {
   const { apiConfigId, limit = 50 } = req.query;

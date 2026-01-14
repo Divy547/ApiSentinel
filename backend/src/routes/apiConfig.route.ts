@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { createApiConfig, deleteApiConfig, getAllApiConfigs, getApiConfigById, getConfigsWithStatus, updateApiConfig } from "../controllers/apiConfig.controller.ts";
+import { createApiConfig, deleteApiConfig, getAllApiConfigs, getApiConfigById, getConfigsWithStatus, updateApiConfig } from "../controllers/apiConfig.controller.js";
 
 const router = Router();
 

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { executeApiTest } from '../services/apiExecuter.ts';
+import { executeApiTest } from '../services/apiExecuter.js';
 
 const router = Router();
 

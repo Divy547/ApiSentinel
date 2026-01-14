@@ -1,15 +1,15 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import app from './app.ts';
-import { connectMongo } from './db/mongo.ts';
+import app from './app.js';
+import { connectMongo } from './db/mongo.js';
 
-import { startApiMonitoringService } from './services/apiMonitor.service.ts';
+import { startApiMonitoringService } from './services/apiMonitor.service.js';
 
 
 const PORT = Number(process.env.PORT) || 3000;
 
-async function startServer() {
+async function starjserver() {
   try {
     await connectMongo(process.env.MONGO_URI!);
     startApiMonitoringService();
@@ -23,4 +23,4 @@ async function startServer() {
   }
 }
 
-startServer();
+starjserver();
